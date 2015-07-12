@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>简易聊天室</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../static/js/index.js"></script>
+  <link type="text/css" rel="stylesheet" href="../static/css/index.css">
+  <style type="text/css"></style>
+</head>
+
+<head>
+
+</head>
+
+<body>
+  <h2>聊天室</h2>
+  <textarea id="test" rows="8" cols="40"></textarea>
+  <div class="hideAfterEnterChatroom">
+    <label for="nameBox">请输入你的昵称：</label>
+    <input type="text" id="nameBox" name="nameBox" size='12'>
+    <input type="button" id="enterChatroom" value="点击进入聊天室">
+  </div>
+  <span id="outputWelcome"></span>
+  <div id="chatArea" style="display: none;">
+    <div id="chatList"></div>
+    <input type="text" id="chatContent" name="chatContent">
+    <input type="button" id="sentChatContent" name="sentChatContent" value="发送">
+  </div>
+</body>
+
+</html>

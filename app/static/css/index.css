@@ -1,0 +1,15 @@
+body {
+  color: #555;
+  background: #F8F8F8;
+  margin: 0;
+  padding: 0;
+}
+
+#chatArea {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#chatList {
+  background-color: #ddd;
+}

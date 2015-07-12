@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>聊天室</title>
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root | tojson | safe }};
+  </script>
+</head>
+
+<body>
+  <h2> 聊天室 </h2>
+  <div id="login">
+    <p>请输入你的昵称
+      <input type="text" id="nameBox" size=12 value="">
+    </p>
+    <input type="button" name="enterChatroom" value="点击进入聊天室">
+    </hr>
+  </div>
+  <hr>
+
+  <div id="outputDiv"></div>
+  <div style="display: none;" id="chatArea">
+    <tr>
+      <td>
+        <textarea id="chatInfo" cols="88" rows="30" readonly="readonly" class="body"></textarea>
+      </td>
+    </tr>
+    <br>
+    <label for="chatroomBox">请输入聊天内容</label>
+    <input type="text" id="chatroomBox" name="chatroomBox" size=64 value="">
+    <input type="button" id="send" value="点击发送">
+    <hr>
+  </div>
+
+  <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../static/js/index.js"></script>
+  <link type="text/css" rel="stylesheet" href="../static/css/index.css">
+</body>
+
+</html>
